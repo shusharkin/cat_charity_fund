@@ -1,1 +1,18 @@
-Generic single-database configuration with an async dbapi.
+БАЗОВЫЕ КОМАНДЫ
+
+Инициализировать Alembic в проекте
+(использовать асинхронный шаблон: с ключом --template async):
+alembic init --template async alembic
+
+Создание файла миграции
+(автогенерация: с ключом --autogenerate):
+alembic revision
+
+Применение миграций:
+alembic upgrade
+
+Отмена миграций:
+alembic downgrade
+
+Просмотр последней выполненной миграции:
+alembic current
